@@ -89,7 +89,6 @@ print(f"--- Evaluación del Modelo ---")
 print(f"Error Absoluto Medio (MAE): {mae:.2f} bicicletas")
 print(f"Coeficiente de Determinación (R2): {r2:.2f}")
 
-# 6. Visualización de Predicciones vs Valores Reales
 plt.figure(figsize=(10, 6))
 sns.scatterplot(x=y_test, y=y_pred, alpha=0.5)
 plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], '--r', lw=2)
