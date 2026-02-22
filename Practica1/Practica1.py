@@ -83,6 +83,7 @@ modelo_rf.fit(x_train, y_train)
 y_pred = modelo_rf.predict(x_test)
 
 mae = mean_absolute_error(y_test, y_pred)
+mae = mae // 1
 r2 = r2_score(y_test, y_pred)
 
 print(f"--- Evaluación del Modelo ---")
