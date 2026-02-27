@@ -7,7 +7,6 @@ df = pd.read_csv('SeoulBikeData_Limpio.csv', encoding='latin-1')
 
 df['date'] = pd.to_datetime(df['date'])
 
-'''
 df['month'] = df['date'].dt.month
 print(f"Mes con más registros (Moda): {df['month'].mode()[0]}")
 
@@ -17,7 +16,7 @@ print(df[['seasons_Spring', 'seasons_Summer', 'seasons_Autumn', 'seasons_Winter'
 
 print(df.groupby('hour')['rented_bike_count'].sum().sort_values(ascending=False))
 
-print(df.corr(numeric_only=True))'''
+print(df.corr(numeric_only=True))
 
 #Asimetria
 print(df.skew(numeric_only=True))
