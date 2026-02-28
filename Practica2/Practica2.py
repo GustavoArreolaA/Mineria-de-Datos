@@ -18,7 +18,6 @@ print(df.groupby('hour')['rented_bike_count'].sum().sort_values(ascending=False)
 
 print(df.corr(numeric_only=True))
 
-#Asimetria
 print(df.skew(numeric_only=True))
 
 sns.set_theme(style="whitegrid")
@@ -33,7 +32,6 @@ plt.title(f"Distribución de Rentas\nAsimetría: {df['rented_bike_count'].skew()
 plt.legend()
 plt.show()
 
-#Curtosis
 print(df.kurtosis(numeric_only=True))
 
 plt.figure(figsize=(8, 5))
