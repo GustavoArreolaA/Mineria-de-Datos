@@ -9,8 +9,6 @@ df = pd.read_csv('SeoulBikeData_Limpio.csv')
 
 df.info()
 
-print(df.head())
-
 X = df[['temperature']]
 y = df[['rented_bike_count']]
 
