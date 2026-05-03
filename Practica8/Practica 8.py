@@ -34,7 +34,7 @@ modelo_forecast.fit(X_train, y_train)
 # --- Predicción de Nuevos Datos---
 
 ultimo_indice = df['time_index'].max()
-nueva_data = pd.DataFrame([[ultimo_indice + 1, 20.5, 14, 50]], columns=features) #Dataset nuevo para evitar errores
+nueva_data = pd.DataFrame([[ultimo_indice + 1, 12.2, 11, 34]], columns=features) #Dataset nuevo para evitar errores
 
 prediccion_futura = modelo_forecast.predict(nueva_data)
 print(f"Predicción para la siguiente hora: {max(0, prediccion_futura[0]):.2f} bicicletas")
